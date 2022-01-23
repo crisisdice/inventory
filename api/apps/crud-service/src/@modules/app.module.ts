@@ -34,7 +34,7 @@ import {
         return {
           pinoHttp: {
           },
-        };
+        }
       }
     }),
     ServicesModule,
