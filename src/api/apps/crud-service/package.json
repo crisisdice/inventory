@@ -1,5 +1,5 @@
 {
-  "name": "inventory-service",
+  "name": "crud-service",
   "version": "1.0.0",
   "scripts": {
     "start": "nest start --watch | pino-pretty",

@@ -2,9 +2,7 @@ import { Module } from '@nestjs/common'
 import { ConfigModule, ConfigService } from '@nestjs/config'
 import { ItemsModule } from './items/items.module'
 import { LoggerModule } from 'nestjs-pino'
-
-@Module({
-})
+import {UsersModule} from './users/users.module'
 
 @Module({
   imports: [
@@ -18,6 +16,7 @@ import { LoggerModule } from 'nestjs-pino'
       }
     }),
     ItemsModule,
+    UsersModule
   ],
   controllers: [],
   providers: [],
