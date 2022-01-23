@@ -21,6 +21,7 @@
     "@nestjs/core": "^8.2.6",
     "@nestjs/mapped-types": "^1.0.1",
     "@nestjs/testing": "^8.2.6",
+    "@types/body-parser": "^1.19.2",
     "@types/jest": "^27.4.0",
     "jest": "^27.4.7",
     "pino-pretty": "^7.5.0",
@@ -40,6 +41,10 @@
       "^.+\\.(t|j)s$": "ts-jest"
     },
     "tsConfig": "/Users/adaily/tmp/fruits/src/api/apps/crud-service/tsconfig.json",
-    "testEnvironment": "node"
+    "testEnvironment": "node",
+    "modulePathIgnorePatterns": [
+      "src/users",
+      "src/base"
+    ]
   }
 }

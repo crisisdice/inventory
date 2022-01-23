@@ -1,25 +1,37 @@
-import { Module } from '@nestjs/common'
-import { ConfigModule, ConfigService } from '@nestjs/config'
-import { ItemsModule } from './items/items.module'
-import { LoggerModule } from 'nestjs-pino'
+import {
+  Module
+} from '@nestjs/common'
 
-@Module({
-})
+import {
+  LoggerModule
+} from 'nestjs-pino'
 
+import {
+  ControllersModule
+} from './@controllers/controllers.module'
+
+import {
+  ServicesModule
+} from './@services/services.module'
+
+//TODO import { ConfigModule, ConfigService } from '@nestjs/config'
+
+/**/
 @Module({
   imports: [
     LoggerModule.forRootAsync({
       useFactory: async () => {
         return {
           pinoHttp: {
-
           },
         };
       }
     }),
-    ItemsModule,
+    ServicesModule,
+    ControllersModule,
   ],
-  controllers: [],
   providers: [],
 })
+
 export class AppModule {}
+

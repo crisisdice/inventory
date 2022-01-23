@@ -5,8 +5,13 @@
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
     "target": "ES5",
-    "outDir": "../../dist/apps/app"
+    "outDir": "dist"
   },
   "include": ["src/**/*"],
-  "exclude": ["node_modules", "dist", "test", "**/*spec.ts"]
+  "exclude": [
+    "node_modules",
+    "dist",
+    "test",
+    "**/*spec.ts"
+  ]
 }
