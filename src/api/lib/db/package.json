@@ -3,9 +3,6 @@
   "version": "1.0.0",
   "license": "MIT",
   "main": "dist/index.js",
-  "scripts": {
-    "build": "npx tsc"
-  },
   "devDependencies": {
     "@nestjs/common": "^8.2.6",
     "@types/node": "16.11.19",
