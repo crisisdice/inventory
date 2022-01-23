@@ -24,6 +24,7 @@
     "@nestjs/testing": "^8.2.6",
     "@types/body-parser": "^1.19.2",
     "@types/jest": "^27.4.0",
+    "@types/supertest": "^2.0.11",
     "jest": "^27.4.7",
     "pino-pretty": "^7.5.0",
     "source-map-support": "^0.5.21",
@@ -40,7 +41,7 @@
     "rootDir": "src",
     "testRegex": ".*\\.spec\\.ts$",
     "transform": {
-      "^.*.ts$": "ts-jest"
+      "^.*ts$": "ts-jest"
     },
     "testEnvironment": "node",
     "modulePathIgnorePatterns": []
