@@ -1,0 +1,24 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "description": "REST API for the inventory management app.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "(cd \"lib/db\" && npx tsc) && (cd \"apps/inventory-service\" && yarn build)"
+  },
+  "author": "Alexander Daily",
+  "license": "ISC",
+  "private": true,
+  "workspaces": {
+    "packages": [
+      "apps/*",
+      "lib/*"
+    ]
+  },
+  "resolutions": {
+    "**/@prisma/client": "3.7.0",
+    "**/prisma": "3.7.0",
+    "**/rxjs": "7.4.0"
+  }
+}
