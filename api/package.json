@@ -4,7 +4,7 @@
   "description": "REST API for the inventory management app.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "(cd \"apps/crud-service\" && yarn test && yarn test:e2e)",
     "build": "(cd \"lib/prisma-service\" && yarn build) && (cd \"lib/base-service\" && yarn build) && (cd \"lib/crud-controller\" && yarn build) && (cd \"apps/crud-service\" && yarn build)"
   },
   "author": "Alexander Daily",
