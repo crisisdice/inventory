@@ -8,11 +8,11 @@ import {
 
 import {
   ControllersModule
-} from './@controllers/controllers.module'
+} from './controllers.module'
 
 import {
   ServicesModule
-} from './@services/services.module'
+} from './services.module'
 
 //TODO import { ConfigModule, ConfigService } from '@nestjs/config'
 

@@ -7,24 +7,24 @@ import {
 } from 'prisma-service'
 
 import {
+  ServicesModule
+} from './services.module'
+
+import {
   ItemsController
-} from './items.controller'
+} from './@controllers/items.controller'
 
 import {
   UsersController
-} from './users.controller'
-
-import {
-  ServicesModule
-} from '../@services/services.module'
+} from './@controllers/users.controller'
 
 import {
   ItemsService
-} from '../@services/items.service'
+} from './@services/items.service'
 
 import {
   UsersService
-} from '../@services/users.service'
+} from './@services/users.service'
 
 /**/
 @Module({

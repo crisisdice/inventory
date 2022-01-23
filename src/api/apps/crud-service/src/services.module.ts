@@ -8,11 +8,11 @@ import {
 
 import {
   ItemsService
-} from './items.service'
+} from './@services/items.service'
 
 import {
   UsersService
-} from './users.service'
+} from './@services/users.service'
 
 /**/
 @Module({
