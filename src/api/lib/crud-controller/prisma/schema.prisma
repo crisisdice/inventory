@@ -1,0 +1,52 @@
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+enum ITEM_STATUS {
+  NEED
+  HAVE
+  DELETED
+}
+
+model Item {
+  // standard
+  id        Int      @id @default(autoincrement())
+  email     String   @unique
+  key       String   @unique
+  metadata  Json
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @updatedAt @map("updated_at")
+
+  // scalar fields
+  status ITEM_STATUS
+  name   String
+
+  // relations
+  userId  Int?  @map("added_by_user_id")
+  addedBy User? @relation(fields: [userId], references: [id])
+
+  @@map("items")
+}
+
+model User {
+  // standard
+  id        Int      @id @default(autoincrement())
+  email     String   @unique
+  key       String   @unique
+  metadata  Json
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @updatedAt @map("updated_at")
+
+  // scalar fields
+  password String
+
+  // relations
+  posts Item[]
+
+  @@map("users")
+}

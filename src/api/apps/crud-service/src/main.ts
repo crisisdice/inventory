@@ -16,7 +16,7 @@ import {
 
 import {
   AppModule
-} from './app.module'
+} from './@modules'
 
 /**/
 async function bootstrap() {

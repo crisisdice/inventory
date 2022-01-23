@@ -5,7 +5,7 @@ import {
 import {
   ItemsService,
   UsersService,
-} from './@services'
+} from '../@services'
 
 /**/
 @Module({

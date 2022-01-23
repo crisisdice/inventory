@@ -9,12 +9,12 @@ import {
 import {
   ItemsController,
   UsersController
-} from './@controllers'
+} from '../@controllers'
 
 import {
   ItemsService,
   UsersService,
-} from './@services'
+} from '../@services'
 
 /**/
 @Module({
