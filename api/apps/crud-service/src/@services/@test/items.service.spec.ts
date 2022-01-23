@@ -23,12 +23,12 @@ describe('ItemsService', () => {
         },
         ItemsService
       ],
-    }).compile();
+    }).compile()
 
-    service = module.get<ItemsService>(ItemsService);
-  });
+    service = module.get<ItemsService>(ItemsService)
+  })
 
   it('should be defined', () => {
-    expect(service).toBeDefined();
-  });
-});
+    expect(service).toBeDefined()
+  })
+})
