@@ -4,6 +4,7 @@ import { PrismaClient, Prisma } from '@prisma/client'
 @Global()
 export class PrismaService extends PrismaClient implements OnModuleInit, OnModuleDestroy {
   constructor() {
+    // TODO pass through config service
     const log: (Prisma.LogLevel | Prisma.LogDefinition)[] = [
       { emit: 'stdout', level: 'query' },
       { emit: 'stdout', level: 'info' },
