@@ -8,7 +8,7 @@ import {
   FindByIdMethod,
   UpdateByIdMethod,
   DeleteByIdMethod,
-} from './config'
+} from './types'
 
 export class BaseService {
   constructor(

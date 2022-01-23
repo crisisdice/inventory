@@ -1,2 +1,2 @@
 export * from './base.service'
-export * from './config'
+export * from './types'
