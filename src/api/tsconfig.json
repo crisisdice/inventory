@@ -1,9 +1,0 @@
-{
-  "compilerOptions": {
-    "declaration": true,
-    "experimentalDecorators": true,
-    "outDir": "dist"
-  },
-  "include": ["apps/**/*"],
-  "exclude": ["node_modules", "dist", "test", "**/*spec.ts"]
-}

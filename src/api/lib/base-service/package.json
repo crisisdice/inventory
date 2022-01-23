@@ -9,5 +9,6 @@
     "@nestjs/common": "^8.2.6"
   },
   "devDependencies": {
-  }
+  },
+  "private": true
 }

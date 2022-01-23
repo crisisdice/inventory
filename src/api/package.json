@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "(cd \"lib/db\" && npx tsc) && (cd \"apps/inventory-service\" && yarn build) && (cd \"apps/crud-service\" && yarn build) && (cd \"apps/logic-service\" && yarn build)"
+    "build": "(cd \"lib/prisma-service\" && ./build) && (cd \"lib/base-service\" && yarn build) && (cd \"lib/crud-controller\" && yarn build) && (cd \"apps/crud-service\" && yarn build)"
   },
   "author": "Alexander Daily",
   "license": "ISC",

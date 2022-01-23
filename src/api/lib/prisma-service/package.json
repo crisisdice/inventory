@@ -1,7 +1,6 @@
 {
   "name": "prisma-service",
   "version": "1.0.0",
-  "license": "MIT",
   "main": "dist/index.js",
   "devDependencies": {
     "@nestjs/common": "^8.2.6",
@@ -18,5 +17,6 @@
   },
   "engines": {
     "node": ">=12.2.0"
-  }
+  },
+  "private": true
 }
