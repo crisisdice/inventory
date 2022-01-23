@@ -12,8 +12,11 @@ import {
 import {
   CreateType,
   UpdateType,
+} from 'base-service'
+
+import {
   ID
-} from './items.config'
+} from '../@config'
 
 import {
   UsersService
@@ -24,10 +27,7 @@ import {
 export class UsersController {
   constructor(
     private readonly service: UsersService
-    //prisma: PrismaService,
-  ) {
-    //this.service = new BaseService(prisma.item)
-  }
+  ) {}
 
   @Post()
   create(@Body() createData: CreateType) {

@@ -12,23 +12,22 @@ import {
 import {
   CreateType,
   UpdateType,
-  ENDPOINT_BASE,
+} from 'base-service'
+
+import {
   ID
-} from './items.config'
+} from '../@config'
 
 import {
   ItemsService
 } from '../@services/items.service'
 
 /**/
-@Controller(ENDPOINT_BASE)
+@Controller('items')
 export class ItemsController {
   constructor(
     private readonly service: ItemsService
-    //prisma: PrismaService,
-  ) {
-    //this.service = new BaseService(prisma.item)
-  }
+  ) {}
 
   @Post()
   create(@Body() createData: CreateType) {

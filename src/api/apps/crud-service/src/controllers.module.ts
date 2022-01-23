@@ -11,20 +11,14 @@ import {
 } from './services.module'
 
 import {
-  ItemsController
-} from './@controllers/items.controller'
-
-import {
+  ItemsController,
   UsersController
-} from './@controllers/users.controller'
+} from './@controllers'
 
 import {
-  ItemsService
-} from './@services/items.service'
-
-import {
-  UsersService
-} from './@services/users.service'
+  ItemsService,
+  UsersService,
+} from './@services'
 
 /**/
 @Module({

@@ -7,12 +7,9 @@ import {
 } from '@nestjs/common'
 
 import {
-  ItemsService
-} from './@services/items.service'
-
-import {
-  UsersService
-} from './@services/users.service'
+  ItemsService,
+  UsersService,
+} from './@services'
 
 /**/
 @Module({
