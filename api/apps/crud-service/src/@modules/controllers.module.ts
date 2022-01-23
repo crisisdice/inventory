@@ -3,10 +3,6 @@ import {
 } from '@nestjs/common'
 
 import {
-  ServicesModule
-} from './services.module'
-
-import {
   ItemsController,
   UsersController
 } from '../@controllers'
@@ -18,9 +14,6 @@ import {
 
 /**/
 @Module({
-  imports: [
-    ServicesModule
-  ],
   controllers: [
     ItemsController,
     UsersController

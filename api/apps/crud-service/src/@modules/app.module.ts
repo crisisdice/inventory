@@ -3,6 +3,10 @@ import {
 } from '@nestjs/common'
 
 import {
+  ConfigModule,
+} from '@nestjs/config'
+
+import {
   LoggerModule
 } from 'nestjs-pino'
 
@@ -13,14 +17,6 @@ import {
 import {
   ControllersModule
 } from './controllers.module'
-
-import {
-  ServicesModule
-} from './services.module'
-
-import {
-  ConfigModule,
-} from '@nestjs/config'
 
 /**/
 @Module({
@@ -37,11 +33,8 @@ import {
         }
       }
     }),
-    ServicesModule,
-    ControllersModule,
     PrismaModule,
-  ],
-  providers: [
+    ControllersModule,
   ],
 })
 
