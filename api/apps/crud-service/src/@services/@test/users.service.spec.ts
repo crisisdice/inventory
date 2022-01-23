@@ -23,12 +23,12 @@ describe('UsersService', () => {
         },
         UsersService
       ],
-    }).compile();
+    }).compile()
 
-    service = module.get<UsersService>(UsersService);
-  });
+    service = module.get<UsersService>(UsersService)
+  })
 
   it('should be defined', () => {
-    expect(service).toBeDefined();
-  });
-});
+    expect(service).toBeDefined()
+  })
+})
