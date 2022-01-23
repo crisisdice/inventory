@@ -20,7 +20,7 @@ import {
 
 import {
   UsersService
-} from '../@services/users.service'
+} from '../@services'
 
 /**/
 @Controller('users')

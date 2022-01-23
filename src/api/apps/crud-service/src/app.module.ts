@@ -7,6 +7,10 @@ import {
 } from 'nestjs-pino'
 
 import {
+  PrismaModule
+} from 'prisma-service'
+
+import {
   ControllersModule
 } from './controllers.module'
 
@@ -29,8 +33,10 @@ import {
     }),
     ServicesModule,
     ControllersModule,
+    PrismaModule,
   ],
-  providers: [],
+  providers: [
+  ],
 })
 
 export class AppModule {}

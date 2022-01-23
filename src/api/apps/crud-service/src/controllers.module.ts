@@ -3,10 +3,6 @@ import {
 } from '@nestjs/common'
 
 import {
-  PrismaService
-} from 'prisma-service'
-
-import {
   ServicesModule
 } from './services.module'
 
@@ -30,7 +26,6 @@ import {
     UsersController
   ],
   providers: [
-    PrismaService,
     ItemsService,
     UsersService,
   ]

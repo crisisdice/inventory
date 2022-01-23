@@ -1,7 +1,7 @@
-import { Injectable, OnModuleInit, OnModuleDestroy } from '@nestjs/common'
+import { Global, OnModuleInit, OnModuleDestroy } from '@nestjs/common'
 import { PrismaClient, Prisma } from '@prisma/client'
 
-@Injectable()
+@Global()
 export class PrismaService extends PrismaClient implements OnModuleInit, OnModuleDestroy {
   constructor() {
     const log: (Prisma.LogLevel | Prisma.LogDefinition)[] = [

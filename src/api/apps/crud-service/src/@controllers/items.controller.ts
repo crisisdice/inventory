@@ -20,7 +20,7 @@ import {
 
 import {
   ItemsService
-} from '../@services/items.service'
+} from '../@services'
 
 /**/
 @Controller('items')
