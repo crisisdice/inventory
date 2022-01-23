@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "scripts": {
     "start": "nest start --watch | pino-pretty",
-    "build": "nest build"
+    "build": "nest build",
+    "test": "jest"
   },
   "dependencies": {
     "@inventory/db": "1.0.0",
@@ -19,7 +20,26 @@
     "@nestjs/common": "^8.2.6",
     "@nestjs/core": "^8.2.6",
     "@nestjs/mapped-types": "^1.0.1",
+    "@nestjs/testing": "^8.2.6",
+    "@types/jest": "^27.4.0",
+    "jest": "^27.4.7",
     "pino-pretty": "^7.5.0",
-    "source-map-support": "^0.5.21"
+    "source-map-support": "^0.5.21",
+    "ts-jest": "^27.1.3"
+  },
+  "jest": {
+    "preset": "ts-jest",
+    "moduleFileExtensions": [
+      "js",
+      "json",
+      "ts"
+    ],
+    "rootDir": "/Users/adaily/tmp/fruits/src/api/apps/crud-service/src",
+    "testRegex": ".*\\.spec\\.ts$",
+    "transform": {
+      "^.+\\.(t|j)s$": "ts-jest"
+    },
+    "tsConfig": "/Users/adaily/tmp/fruits/src/api/apps/crud-service/tsconfig.json",
+    "testEnvironment": "node"
   }
 }
