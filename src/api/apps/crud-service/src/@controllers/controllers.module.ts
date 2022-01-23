@@ -4,19 +4,19 @@ import {
 
 import {
   PrismaService
-} from '@inventory/db'
+} from 'prisma-service'
 
 import {
   ItemsController
 } from './items.controller'
 
 import {
-  ServicesModule
-} from '../@services/services.module'
-
-import {
   UsersController
 } from './users.controller'
+
+import {
+  ServicesModule
+} from '../@services/services.module'
 
 import {
   ItemsService

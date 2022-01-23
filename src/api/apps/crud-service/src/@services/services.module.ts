@@ -1,6 +1,6 @@
 import {
   PrismaService
-} from '@inventory/db'
+} from 'prisma-service'
 
 import {
   Module

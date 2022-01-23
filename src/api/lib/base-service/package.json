@@ -1,0 +1,19 @@
+{
+  "name": "base-service",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "nest build"
+  },
+  "dependencies": {
+    "prisma-service": "1.0.0",
+    "@nestjs/common": "^8.2.6",
+    "@nestjs/core": "^8.2.6",
+    "@nestjs/mapped-types": "^1.0.1",
+    "@nestjs/platform-express": "^8.2.6",
+    "reflect-metadata": "^0.1.13"
+  },
+  "devDependencies": {
+    "source-map-support": "^0.5.21"
+  }
+}
